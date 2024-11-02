@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Блоки управления</title>
+ 
+</head>
+<body>
+  <div class="container">
+    <div class="inputFields-container">
+      <input type="text">
+      <input type="text">
+      <button onclick="moveUp(this.parentNode)">&#8593;</button>
+      <button onclick="moveDown(this.parentNode)">&#8595;</button>
+      <button onclick="deleteInputFields(this.parentNode)">x</button>
+    </div>
+    <div class="buttons">
+      <button onclick="addInputFields()">Добавить элемент</button>
+      <button onclick="saveData()">Сохранить</button>
+    </div>
+    <div class="output" id="output"></div>
+  </div>
+
+  <script src="script.js"> </script>
+
+</body>
+</html>
